@@ -26,7 +26,6 @@ class Menu extends Component {
             caption={item.description}
             featured
             onPress={() => {
-              console.log("Trying to navigate to", item.id);
               navigate("DishDetail", { dishId: item.id });
             }}
             imageSrc={{ uri: baseUrl + item.image }}
